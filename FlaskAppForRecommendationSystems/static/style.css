@@ -1,0 +1,253 @@
+/* static/style.css */
+
+/* Reset some default styles for consistency */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a font to the entire page */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #2874f0;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+button{
+border: #333;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* Style for the recommendation cards */
+.card-container {
+    display:inline-flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    margin-top: 20px;
+ 
+}
+
+.card {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust as needed for spacing */
+    background-color: #fff;
+    border-color: #333;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 20px; /* Smooth border radius */
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0; /* Rounded top corners */
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+
+/* Style for the intro paragraph */
+.intro {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Style for the model section */
+.model-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Style for individual models */
+.model {
+    flex: 0 0 calc(50% - 20px); /* Two models in a row */
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.model:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.model h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.model p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 0;
+}
+
+
+
+/* Style for the form */
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 10%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    border-color: #2874f0;
+}
+
+button {
+    background-color: #2874f0;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1a5fa2;
+}
+
+
+
+
+
+/* Style for the image section */
+.image-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Style for the main image */
+.main-image {
+    flex: 0 0 calc(40% - 20px); /* Adjust as needed for spacing */
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.main-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block; /* Prevents extra space below the image */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.main-image p {
+    font-size: 16px;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Style for similar images */
+.similar-images {
+    flex: 0 0 calc(60% - 20px); /* Adjust as needed for spacing */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.similar-image {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.similar-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block; /* Prevents extra space below the image */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.similar-image p {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.similar-img {
+    width: 200px; /* Set the desired width */
+    height: 200px; /* Set the desired height */
+    object-fit: cover; /* Preserve the image aspect ratio */
+    border-radius: 8px;
+}
+
+
+
+
+

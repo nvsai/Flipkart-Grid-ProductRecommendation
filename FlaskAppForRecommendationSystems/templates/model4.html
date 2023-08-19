@@ -1,0 +1,22 @@
+<!-- templates/model4.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="content">
+    <h1>Product Recommendation by similar image</h1>
+    <div class="image-section">
+        <div class="main-image">
+            <img src="{{ url_for('static', filename='query_red_tshirt.jpg')}}" alt="Query Image">
+            <p>Query Image</p>
+        </div>
+        <div class="similar-images">
+            <h2>Similar Images</h2>
+            {% for similar_image in similar_images %}
+                <div class="similar-image">
+                    <img src="{{ url_for('static', filename=similar_image) }}" alt="Similar Image" class="similar-img">                    
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

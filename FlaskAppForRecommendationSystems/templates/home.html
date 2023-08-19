@@ -1,0 +1,28 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="content">
+    <h1>Welcome to Our Recommender System</h1>
+    <p class="intro">Discover personalized recommendations using various machine learning models.</p>
+
+    <div class="model-section">
+        <div class="model">
+            <h2>Model 1: Collaborative Filtering</h2>
+            <p>Find similar users and recommend products based on their ratings.</p>
+        </div>
+        <div class="model">
+            <h2>Model 2: User-Product Similarity</h2>
+            <p>Calculate cosine similarity between user preferences and product features.</p>
+        </div>
+        <div class="model">
+            <h2>Model 3: Content-Based Filtering</h2>
+            <p>Recommend products based on descriptions and user preferences.</p>
+        </div>
+        <div class="model">
+            <h2>Model 4: Image Similarity</h2>
+            <p>Use image features to recommend visually similar products.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
