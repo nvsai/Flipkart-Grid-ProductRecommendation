@@ -1,6 +1,9 @@
 # Flipkart-Grid-5.0-ProductRecommendation
 This a repository that has ML code to our solution for Flipkart Grid challenge on Product Recommendation
-PLease See the particular .ipynb for code level explanation of concepts
+
+Please See the particular .ipynb for code level explanation of concepts
+
+Also Please see presentation folder for prototype demonstration video and ppt presentation.
 
 In UserRecommendationbyMovies we used pearson similarity between different users and their ratings for movies in categories like Barbie,Disney,Marvel,DC,TRansformers. This a User-Based Collborative filtering technique for product merchendise recommendation based on movie ratings of similar users.
 
